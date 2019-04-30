@@ -19,9 +19,25 @@ final class AppCoordinator: Coordinator {
 
   // MARK: - Navigation
   private func showMain() {
-    let mainVC = MainViewController()
-    navController.setViewControllers([mainVC], animated: false)
+    let mainVC = UIStoryboard.instantiateMainViewController(delegate: self)
+    navController.setViewControllers([mainVC], animated: true)
+  }
+
+  private func showAuth() {
+    let authVC = UIStoryboard.instantiateAuthViewController(delegate: self)
+    navController.setViewControllers([authVC], animated: true)
   }
 }
 
 // MARK: - MainViewControllerDelegate
+extension AppCoordinator: MainViewControllerDelegate {
+  func didSignOut() {
+    showAuth()
+  }
+}
+
+extension AppCoordinator: AuthViewControllerDelegate {
+  func didSignIn() {
+    showMain()
+  }
+}

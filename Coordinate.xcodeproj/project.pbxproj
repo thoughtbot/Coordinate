@@ -8,24 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		CDD511822278949B00517E1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD511812278949B00517E1C /* AppDelegate.swift */; };
-		CDD511842278949B00517E1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD511832278949B00517E1C /* ViewController.swift */; };
+		CDD511842278949B00517E1C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD511832278949B00517E1C /* MainViewController.swift */; };
 		CDD511872278949B00517E1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD511852278949B00517E1C /* Main.storyboard */; };
 		CDD511892278949C00517E1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDD511882278949C00517E1C /* Assets.xcassets */; };
 		CDD5118C2278949C00517E1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD5118A2278949C00517E1C /* LaunchScreen.storyboard */; };
 		CDD51194227894AC00517E1C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD51193227894AC00517E1C /* Coordinator.swift */; };
 		CDD51196227894BD00517E1C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD51195227894BD00517E1C /* AppCoordinator.swift */; };
+		CDD511992278D03F00517E1C /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD511982278D03F00517E1C /* AuthViewController.swift */; };
+		CDD5119B2278D0DF00517E1C /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD5119A2278D0DF00517E1C /* Auth.storyboard */; };
+		CDD5119D2278DA3300517E1C /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD5119C2278DA3300517E1C /* UIStoryboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CDD5117E2278949B00517E1C /* Coordinate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coordinate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD511812278949B00517E1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CDD511832278949B00517E1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CDD511832278949B00517E1C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CDD511862278949B00517E1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDD511882278949C00517E1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDD5118B2278949C00517E1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDD5118D2278949C00517E1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDD51193227894AC00517E1C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		CDD51195227894BD00517E1C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		CDD511982278D03F00517E1C /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		CDD5119A2278D0DF00517E1C /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		CDD5119C2278DA3300517E1C /* UIStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +64,27 @@
 		CDD511802278949B00517E1C /* Coordinate */ = {
 			isa = PBXGroup;
 			children = (
-				CDD511812278949B00517E1C /* AppDelegate.swift */,
-				CDD511832278949B00517E1C /* ViewController.swift */,
-				CDD511852278949B00517E1C /* Main.storyboard */,
-				CDD511882278949C00517E1C /* Assets.xcassets */,
-				CDD5118A2278949C00517E1C /* LaunchScreen.storyboard */,
-				CDD5118D2278949C00517E1C /* Info.plist */,
-				CDD51193227894AC00517E1C /* Coordinator.swift */,
 				CDD51195227894BD00517E1C /* AppCoordinator.swift */,
+				CDD511812278949B00517E1C /* AppDelegate.swift */,
+				CDD511882278949C00517E1C /* Assets.xcassets */,
+				CDD5118D2278949C00517E1C /* Info.plist */,
+				CDD5118A2278949C00517E1C /* LaunchScreen.storyboard */,
+				CDD511852278949B00517E1C /* Main.storyboard */,
+				CDD5119A2278D0DF00517E1C /* Auth.storyboard */,
+				CDD511972278CFE700517E1C /* Protocols */,
+				CDD511832278949B00517E1C /* MainViewController.swift */,
+				CDD511982278D03F00517E1C /* AuthViewController.swift */,
+				CDD5119C2278DA3300517E1C /* UIStoryboard.swift */,
 			);
 			path = Coordinate;
+			sourceTree = "<group>";
+		};
+		CDD511972278CFE700517E1C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CDD51193227894AC00517E1C /* Coordinator.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDD5119B2278D0DF00517E1C /* Auth.storyboard in Resources */,
 				CDD5118C2278949C00517E1C /* LaunchScreen.storyboard in Resources */,
 				CDD511892278949C00517E1C /* Assets.xcassets in Resources */,
 				CDD511872278949B00517E1C /* Main.storyboard in Resources */,
@@ -141,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDD5119D2278DA3300517E1C /* UIStoryboard.swift in Sources */,
 				CDD51196227894BD00517E1C /* AppCoordinator.swift in Sources */,
-				CDD511842278949B00517E1C /* ViewController.swift in Sources */,
+				CDD511842278949B00517E1C /* MainViewController.swift in Sources */,
+				CDD511992278D03F00517E1C /* AuthViewController.swift in Sources */,
 				CDD511822278949B00517E1C /* AppDelegate.swift in Sources */,
 				CDD51194227894AC00517E1C /* Coordinator.swift in Sources */,
 			);
