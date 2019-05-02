@@ -17,6 +17,7 @@
 		CDD511992278D03F00517E1C /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD511982278D03F00517E1C /* AuthViewController.swift */; };
 		CDD5119B2278D0DF00517E1C /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD5119A2278D0DF00517E1C /* Auth.storyboard */; };
 		CDD5119D2278DA3300517E1C /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD5119C2278DA3300517E1C /* UIStoryboard.swift */; };
+		CDD5119F2278E0CC00517E1C /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD5119E2278E0CC00517E1C /* AuthCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		CDD511982278D03F00517E1C /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		CDD5119A2278D0DF00517E1C /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		CDD5119C2278DA3300517E1C /* UIStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
+		CDD5119E2278E0CC00517E1C /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				CDD51195227894BD00517E1C /* AppCoordinator.swift */,
+				CDD5119E2278E0CC00517E1C /* AuthCoordinator.swift */,
 				CDD511812278949B00517E1C /* AppDelegate.swift */,
 				CDD511882278949C00517E1C /* Assets.xcassets */,
 				CDD5118D2278949C00517E1C /* Info.plist */,
@@ -163,6 +166,7 @@
 				CDD51196227894BD00517E1C /* AppCoordinator.swift in Sources */,
 				CDD511842278949B00517E1C /* MainViewController.swift in Sources */,
 				CDD511992278D03F00517E1C /* AuthViewController.swift in Sources */,
+				CDD5119F2278E0CC00517E1C /* AuthCoordinator.swift in Sources */,
 				CDD511822278949B00517E1C /* AppDelegate.swift in Sources */,
 				CDD51194227894AC00517E1C /* Coordinator.swift in Sources */,
 			);

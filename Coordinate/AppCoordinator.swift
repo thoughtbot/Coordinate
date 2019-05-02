@@ -4,6 +4,7 @@ final class AppCoordinator: Coordinator {
   // MARK: - Properties
   private let navController: UINavigationController
   private let window: UIWindow
+  private var childCoordinators: [Coordinator] = []
 
   // MARK: - Initializer
   init(navController: UINavigationController, window: UIWindow) {
@@ -21,11 +22,13 @@ final class AppCoordinator: Coordinator {
   private func showMain() {
     let mainVC = UIStoryboard.instantiateMainViewController(delegate: self)
     navController.setViewControllers([mainVC], animated: true)
+    childCoordinators.removeAll { $0 is AuthCoordinator }
   }
 
   private func showAuth() {
-    let authVC = UIStoryboard.instantiateAuthViewController(delegate: self)
-    navController.setViewControllers([authVC], animated: true)
+    let authCoordinator = AuthCoordinator(navController: navController, delegate: self)
+    childCoordinators.append(authCoordinator)
+    authCoordinator.start()
   }
 }
 
@@ -36,8 +39,8 @@ extension AppCoordinator: MainViewControllerDelegate {
   }
 }
 
-extension AppCoordinator: AuthViewControllerDelegate {
-  func didSignIn() {
+extension AppCoordinator: AuthCoordinatorDelegate {
+  func didAuthenticate() {
     showMain()
   }
 }
